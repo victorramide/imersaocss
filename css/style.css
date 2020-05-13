@@ -1,12 +1,42 @@
+/*reset do CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-image: url("http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg");
+    background-image: url("../img/fundo.jpg");
     background-size: auto 100vh;
     font-family: Arial;
+    font-size: 10px;
     
+}
+/*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media(min-width: 400px){
+    body{
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 600px){
+    body{
+        font-size: 18px;
+    }
+}
+
+header{
+    height: 100vh; /*Permite que a altura do elemento tome a tela toda*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu{
     background-color: white;
+    position: fixed; /*Permite que o menu superior fique fixo*/
+    top: 0; /*Complementa o position fazendo com que o menu fique colado no topo da tela*/
+    width: 100vw;
 }
 
 .menu ul{
@@ -16,6 +46,11 @@ body{
 
 .menu > ul li{
     list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
 }
 
 a {
@@ -34,4 +69,13 @@ a:hover{
 
 .site-subtitle{
     font-style: italic;
+}
+
+.site-title{
+    font-size: 4em;
+}
+
+.img-portfolio{
+    height: 180px;
+    width: 180px;
 }
