@@ -8,9 +8,8 @@
 body{
     background-image: url("../img/fundo.jpg");
     background-size: auto 100vh;
-    font-family: Arial;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 10px;
-    
 }
 /*Se a tela tiver pelo menos 400px vai carregar estes estilos*/
 @media(min-width: 400px){
@@ -25,8 +24,14 @@ body{
     }
 }
 
+@media(min-width: 1200px){
+    body{
+        font-size: 20px;
+    }
+}
+
 header{
-    height: 100vh; /*Permite que a altura do elemento tome a tela toda*/
+    height: 80vh; /*Permite que a altura do elemento tome a tela toda*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,13 +74,54 @@ a:hover{
 
 .site-subtitle{
     font-style: italic;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .site-title{
     font-size: 4em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portfolio {
+    padding: 2em;
+    height: 100vh;
+}
+
+.portfolio h2{
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 240px;
+}
+
+@media(min-width: 560px){
+    .portfolio .grid{
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media(min-width: 880px){
+    .portfolio .grid{
+        grid-template-columns: repeat(3, 260px);
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 8em - 48px);
+    }
+}
+
+.portfolio figure{
+    text-align: center;
 }
 
 .img-portfolio{
     height: 180px;
-    width: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: left bottom;
 }
