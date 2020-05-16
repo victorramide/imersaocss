@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Ubuntu:wght@300;400;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
     <title>Victor Ramide</title>
 </head>
 
@@ -15,39 +16,62 @@
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="titulo">
             <h1 class="site-title">Victor Ramide</h1>
             <h2 class="site-subtitle">Jr. Web Developer</h2>
         </div>
     </header>
-    <section class="portfolio">
-        <h2>Portfólio</h2>
-        <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-                    alt="eCommerce">
-                <figcaption>eCommerce</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-                <figcaption>Mobile</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-                <figcaption>Web design</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-                    alt="Projetos pessoais">
-                <figcaption>Projetos pessoais</figcaption>
-            </figure>
-        </div>
-    </section>
+    <main>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfólio</h2>
+            <div class="grid">
+                <figure>
+                    <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+                        alt="eCommerce">
+                    <figcaption>eCommerce</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                    <figcaption>Mobile</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
+                        alt="Web design">
+                    <figcaption>Web design</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                        alt="Projetos pessoais">
+                    <figcaption>Projetos pessoais</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="contato" id="contato">
+            <h2>Contato</h2>
+              <div class="grid icons">
+              <a target="_blank" href="#">
+                <i class="fab fa-github"></i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+              <a target="_blank" href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="mailto:victorramide@outlook.com.br">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
