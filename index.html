@@ -27,47 +27,102 @@
         </div>
     </header>
     <main>
-        <section class="portfolio" id="portfolio">
+        <section class="sobre container">
+            <h2>Sobre</h2>
+            <figure class="avatar">
+                <img src="img/victor_img.jpg" alt="Victor Ramide">
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim blandit bibendum. Duis
+                fermentum ultrices tortor non vestibulum. In vitae tellus sit amet ligula ullamcorper finibus at quis
+                sapien. Proin non blandit neque. Nulla facilisi. Donec in quam interdum ligula imperdiet rhoncus quis a
+                tortor. Aliquam fermentum magna at sapien venenatis sodales. Curabitur in iaculis velit. Ut ligula elit,
+                laoreet nec purus vel, congue volutpat neque. In magna orci, venenatis sagittis mattis vitae, mattis ac
+                magna. Morbi elementum sem auctor, posuere sapien non, molestie tortor. Vestibulum facilisis urna felis,
+                in dapibus felis imperdiet eget. Suspendisse felis dolor, blandit vitae lobortis placerat, volutpat eu
+                lacus. Etiam vitae dignissim sapien. Curabitur dapibus orci ac lorem tincidunt sollicitudin.</p>
+
+            <p>Donec non laoreet velit. Nam eget sapien eu sem porta pulvinar sed gravida mi. Curabitur dapibus
+                scelerisque malesuada. Vestibulum id nisl nec lectus dapibus mattis. Morbi faucibus suscipit elit eget
+                placerat. Vestibulum sit amet venenatis lectus. Duis quis lacinia dui, eget vestibulum dui. Mauris
+                aliquet turpis sed mattis tristique. Duis lorem tellus, pellentesque non placerat rutrum, consequat id
+                enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas volutpat eget libero sed
+                rutrum. Ut nisl dui, mattis fermentum eros eget, cursus aliquam nisl. Quisque erat massa, mattis a dui
+                eget, malesuada lacinia ante. Nam aliquet, mauris eget hendrerit egestas, lorem purus viverra nulla, in
+                interdum erat metus quis dui. In augue ante, rutrum eget tortor in, dapibus rhoncus nunc.</p>
+            <p>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da
+                    Alura</a></p>
+        </section>
+        <section class="portfolio container" id="portfolio">
             <h2>Portfólio</h2>
             <div class="grid">
-                <figure>
-                    <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-                        alt="eCommerce">
-                    <figcaption>eCommerce</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-                    <figcaption>Mobile</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
-                        alt="Web design">
-                    <figcaption>Web design</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
-                        alt="Projetos pessoais">
-                    <figcaption>Projetos pessoais</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
+                                alt="eCommerce">
+                            <figcaption>eCommerce</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            Parte traseira do elemento
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                                alt="Projetos pessoais">
+                            <figcaption>Projetos pessoais</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            Parte traseira do elemento
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg"
+                                alt="Web design">
+                            <figcaption>Web design</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            Parte traseira do elemento
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="card">
+                        <figure class="card-front">
+                            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg"
+                                alt=">Mobile">
+                            <figcaption>Mobile</figcaption>
+                        </figure>
+                        <div class="card-back">
+                            Parte traseira do elemento
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="contato" id="contato">
+        <section class="contato container" id="contato">
             <h2>Contato</h2>
-              <div class="grid icons">
-              <a target="_blank" href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a target="_blank" href="#">
-                <i class="fab fa-twitter-square"></i>
-              </a>
-              <a target="_blank" href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="mailto:victorramide@outlook.com.br">
-                <i class="fas fa-envelope"></i>
-              </a>
+            <div class="grid icons">
+                <a target="_blank" href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a target="_blank" href="#">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+                <a target="_blank" href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:victorramide@outlook.com.br">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-          </section>
+        </section>
     </main>
     <footer>
 
